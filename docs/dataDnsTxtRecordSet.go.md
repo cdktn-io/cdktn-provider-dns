@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/datadnstxtrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnstxtrecordset"
 
 datadnstxtrecordset.NewDataDnsTxtRecordSet(scope Construct, id *string, config DataDnsTxtRecordSetConfig) DataDnsTxtRecordSet
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/datadnstxtrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnstxtrecordset"
 
 datadnstxtrecordset.DataDnsTxtRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/datadnstxtrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnstxtrecordset"
 
 datadnstxtrecordset.DataDnsTxtRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadnstxtrecordset.DataDnsTxtRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/datadnstxtrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnstxtrecordset"
 
 datadnstxtrecordset.DataDnsTxtRecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadnstxtrecordset.DataDnsTxtRecordSet_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/datadnstxtrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnstxtrecordset"
 
 datadnstxtrecordset.DataDnsTxtRecordSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.dataDnsTxtRecordSet.DataDnsTxtRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/datadnstxtrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnstxtrecordset"
 
 &datadnstxtrecordset.DataDnsTxtRecordSetConfig {
 	Connection: interface{},
