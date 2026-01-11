@@ -1,28 +1,28 @@
-# `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-dns.provider"></a>
+# `provider` Submodule <a name="`provider` Submodule" id="@cdktn/provider-dns.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DnsProvider <a name="DnsProvider" id="@cdktf/provider-dns.provider.DnsProvider"></a>
+### DnsProvider <a name="DnsProvider" id="@cdktn/provider-dns.provider.DnsProvider"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs dns}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-dns.provider.DnsProvider.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-dns.provider.DnsProvider.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-dns'
+import { provider } from '@cdktn/provider-dns'
 
 new provider.DnsProvider(scope: Construct, id: string, config?: DnsProviderConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig">DnsProviderConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-dns.provider.DnsProviderConfig">DnsProviderConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-dns.provider.DnsProvider.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-dns.provider.DnsProvider.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-dns.provider.DnsProvider.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-dns.provider.DnsProvider.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-dns.provider.DnsProviderConfig">DnsProviderConfig</a>
+- *Type:* <a href="#@cdktn/provider-dns.provider.DnsProviderConfig">DnsProviderConfig</a>
 
 ---
 
@@ -50,19 +50,19 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.resetAlias">resetAlias</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.resetAlias">resetAlias</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-dns.provider.DnsProvider.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-dns.provider.DnsProvider.toString"></a>
 
 ```typescript
 public toString(): string
@@ -70,25 +70,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-dns.provider.DnsProvider.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-dns.provider.DnsProvider.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-dns.provider.DnsProvider.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-dns.provider.DnsProvider.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-dns.provider.DnsProvider.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-dns.provider.DnsProvider.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-dns.provider.DnsProvider.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-dns.provider.DnsProvider.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -96,7 +96,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-dns.provider.DnsProvider.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-dns.provider.DnsProvider.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -104,7 +104,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-dns.provider.DnsProvider.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-dns.provider.DnsProvider.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -112,19 +112,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-dns.provider.DnsProvider.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-dns.provider.DnsProvider.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-dns.provider.DnsProvider.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-dns.provider.DnsProvider.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-dns.provider.DnsProvider.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-dns.provider.DnsProvider.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -132,13 +132,13 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `resetAlias` <a name="resetAlias" id="@cdktf/provider-dns.provider.DnsProvider.resetAlias"></a>
+##### `resetAlias` <a name="resetAlias" id="@cdktn/provider-dns.provider.DnsProvider.resetAlias"></a>
 
 ```typescript
 public resetAlias(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-dns.provider.DnsProvider.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-dns.provider.DnsProvider.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -148,17 +148,17 @@ public resetUpdate(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DnsProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DnsProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-dns.provider.DnsProvider.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-dns.provider.DnsProvider.isConstruct"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-dns'
+import { provider } from '@cdktn/provider-dns'
 
 provider.DnsProvider.isConstruct(x: any)
 ```
@@ -179,7 +179,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dns.provider.DnsProvider.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-dns.provider.DnsProvider.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -187,45 +187,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-dns.provider.DnsProvider.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-dns.provider.DnsProvider.isTerraformElement"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-dns'
+import { provider } from '@cdktn/provider-dns'
 
 provider.DnsProvider.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dns.provider.DnsProvider.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-dns.provider.DnsProvider.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-dns.provider.DnsProvider.isTerraformProvider"></a>
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktn/provider-dns.provider.DnsProvider.isTerraformProvider"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-dns'
+import { provider } from '@cdktn/provider-dns'
 
 provider.DnsProvider.isTerraformProvider(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dns.provider.DnsProvider.isTerraformProvider.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-dns.provider.DnsProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-dns'
+import { provider } from '@cdktn/provider-dns'
 
 provider.DnsProvider.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a DnsProvider resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -233,7 +233,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -241,7 +241,7 @@ The construct id used in the generated config for the DnsProvider to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -251,7 +251,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -263,22 +263,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.updateInput">updateInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.update">update</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.updateInput">updateInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.update">update</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-dns.provider.DnsProvider.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-dns.provider.DnsProvider.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -290,7 +290,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-dns.provider.DnsProvider.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-dns.provider.DnsProvider.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -300,7 +300,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-dns.provider.DnsProvider.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-dns.provider.DnsProvider.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -310,7 +310,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-dns.provider.DnsProvider.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-dns.provider.DnsProvider.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -320,7 +320,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktf/provider-dns.provider.DnsProvider.property.metaAttributes"></a>
+##### `metaAttributes`<sup>Required</sup> <a name="metaAttributes" id="@cdktn/provider-dns.provider.DnsProvider.property.metaAttributes"></a>
 
 ```typescript
 public readonly metaAttributes: {[ key: string ]: any};
@@ -330,7 +330,7 @@ public readonly metaAttributes: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-dns.provider.DnsProvider.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-dns.provider.DnsProvider.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -340,7 +340,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-dns.provider.DnsProvider.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-dns.provider.DnsProvider.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -350,7 +350,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktf/provider-dns.provider.DnsProvider.property.terraformProviderSource"></a>
+##### `terraformProviderSource`<sup>Optional</sup> <a name="terraformProviderSource" id="@cdktn/provider-dns.provider.DnsProvider.property.terraformProviderSource"></a>
 
 ```typescript
 public readonly terraformProviderSource: string;
@@ -360,7 +360,7 @@ public readonly terraformProviderSource: string;
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-dns.provider.DnsProvider.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-dns.provider.DnsProvider.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -370,7 +370,7 @@ public readonly alias: string;
 
 ---
 
-##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktf/provider-dns.provider.DnsProvider.property.aliasInput"></a>
+##### `aliasInput`<sup>Optional</sup> <a name="aliasInput" id="@cdktn/provider-dns.provider.DnsProvider.property.aliasInput"></a>
 
 ```typescript
 public readonly aliasInput: string;
@@ -380,23 +380,23 @@ public readonly aliasInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-dns.provider.DnsProvider.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-dns.provider.DnsProvider.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: IResolvable | DnsProviderUpdate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-dns.provider.DnsProvider.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-dns.provider.DnsProvider.property.update"></a>
 
 ```typescript
 public readonly update: IResolvable | DnsProviderUpdate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
 
 ---
 
@@ -404,11 +404,11 @@ public readonly update: IResolvable | DnsProviderUpdate[];
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-dns.provider.DnsProvider.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-dns.provider.DnsProvider.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -420,12 +420,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DnsProviderConfig <a name="DnsProviderConfig" id="@cdktf/provider-dns.provider.DnsProviderConfig"></a>
+### DnsProviderConfig <a name="DnsProviderConfig" id="@cdktn/provider-dns.provider.DnsProviderConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-dns.provider.DnsProviderConfig.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-dns'
+import { provider } from '@cdktn/provider-dns'
 
 const dnsProviderConfig: provider.DnsProviderConfig = { ... }
 ```
@@ -434,12 +434,12 @@ const dnsProviderConfig: provider.DnsProviderConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderConfig.property.update">update</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | update block. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderConfig.property.update">update</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | update block. |
 
 ---
 
-##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktf/provider-dns.provider.DnsProviderConfig.property.alias"></a>
+##### `alias`<sup>Optional</sup> <a name="alias" id="@cdktn/provider-dns.provider.DnsProviderConfig.property.alias"></a>
 
 ```typescript
 public readonly alias: string;
@@ -453,13 +453,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-dns.provider.DnsProviderConfig.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-dns.provider.DnsProviderConfig.property.update"></a>
 
 ```typescript
 public readonly update: IResolvable | DnsProviderUpdate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
 
 update block.
 
@@ -467,12 +467,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### DnsProviderUpdate <a name="DnsProviderUpdate" id="@cdktf/provider-dns.provider.DnsProviderUpdate"></a>
+### DnsProviderUpdate <a name="DnsProviderUpdate" id="@cdktn/provider-dns.provider.DnsProviderUpdate"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderUpdate.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-dns.provider.DnsProviderUpdate.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-dns'
+import { provider } from '@cdktn/provider-dns'
 
 const dnsProviderUpdate: provider.DnsProviderUpdate = { ... }
 ```
@@ -481,25 +481,25 @@ const dnsProviderUpdate: provider.DnsProviderUpdate = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi">gssapi</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>[]</code> | gssapi block. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm">keyAlgorithm</a></code> | <code>string</code> | Required if `key_name` is set. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyName">keyName</a></code> | <code>string</code> | The name of the TSIG key used to sign the DNS update messages. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.keySecret">keySecret</a></code> | <code>string</code> | Required if `key_name` is set A Base64-encoded string containing the shared secret to be used for TSIG. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.port">port</a></code> | <code>number</code> | The target UDP port on the server where updates are sent to. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.retries">retries</a></code> | <code>number</code> | How many times to retry on connection timeout. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.server">server</a></code> | <code>string</code> | The hostname or IP address of the DNS server to send updates to. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.timeout">timeout</a></code> | <code>string</code> | Timeout for DNS queries. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdate.property.transport">transport</a></code> | <code>string</code> | Transport to use for DNS queries. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.gssapi">gssapi</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>[]</code> | gssapi block. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm">keyAlgorithm</a></code> | <code>string</code> | Required if `key_name` is set. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.keyName">keyName</a></code> | <code>string</code> | The name of the TSIG key used to sign the DNS update messages. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.keySecret">keySecret</a></code> | <code>string</code> | Required if `key_name` is set A Base64-encoded string containing the shared secret to be used for TSIG. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.port">port</a></code> | <code>number</code> | The target UDP port on the server where updates are sent to. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.retries">retries</a></code> | <code>number</code> | How many times to retry on connection timeout. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.server">server</a></code> | <code>string</code> | The hostname or IP address of the DNS server to send updates to. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.timeout">timeout</a></code> | <code>string</code> | Timeout for DNS queries. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.transport">transport</a></code> | <code>string</code> | Transport to use for DNS queries. |
 
 ---
 
-##### `gssapi`<sup>Optional</sup> <a name="gssapi" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.gssapi"></a>
+##### `gssapi`<sup>Optional</sup> <a name="gssapi" id="@cdktn/provider-dns.provider.DnsProviderUpdate.property.gssapi"></a>
 
 ```typescript
 public readonly gssapi: IResolvable | DnsProviderUpdateGssapi[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>[]
 
 gssapi block.
 
@@ -507,7 +507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `keyAlgorithm`<sup>Optional</sup> <a name="keyAlgorithm" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm"></a>
+##### `keyAlgorithm`<sup>Optional</sup> <a name="keyAlgorithm" id="@cdktn/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm"></a>
 
 ```typescript
 public readonly keyAlgorithm: string;
@@ -523,7 +523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `keyName`<sup>Optional</sup> <a name="keyName" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.keyName"></a>
+##### `keyName`<sup>Optional</sup> <a name="keyName" id="@cdktn/provider-dns.provider.DnsProviderUpdate.property.keyName"></a>
 
 ```typescript
 public readonly keyName: string;
@@ -539,7 +539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `keySecret`<sup>Optional</sup> <a name="keySecret" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.keySecret"></a>
+##### `keySecret`<sup>Optional</sup> <a name="keySecret" id="@cdktn/provider-dns.provider.DnsProviderUpdate.property.keySecret"></a>
 
 ```typescript
 public readonly keySecret: string;
@@ -555,7 +555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.port"></a>
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-dns.provider.DnsProviderUpdate.property.port"></a>
 
 ```typescript
 public readonly port: number;
@@ -571,7 +571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `retries`<sup>Optional</sup> <a name="retries" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.retries"></a>
+##### `retries`<sup>Optional</sup> <a name="retries" id="@cdktn/provider-dns.provider.DnsProviderUpdate.property.retries"></a>
 
 ```typescript
 public readonly retries: number;
@@ -587,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `server`<sup>Optional</sup> <a name="server" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.server"></a>
+##### `server`<sup>Optional</sup> <a name="server" id="@cdktn/provider-dns.provider.DnsProviderUpdate.property.server"></a>
 
 ```typescript
 public readonly server: string;
@@ -603,7 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeout`<sup>Optional</sup> <a name="timeout" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.timeout"></a>
+##### `timeout`<sup>Optional</sup> <a name="timeout" id="@cdktn/provider-dns.provider.DnsProviderUpdate.property.timeout"></a>
 
 ```typescript
 public readonly timeout: string;
@@ -619,7 +619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `transport`<sup>Optional</sup> <a name="transport" id="@cdktf/provider-dns.provider.DnsProviderUpdate.property.transport"></a>
+##### `transport`<sup>Optional</sup> <a name="transport" id="@cdktn/provider-dns.provider.DnsProviderUpdate.property.transport"></a>
 
 ```typescript
 public readonly transport: string;
@@ -635,12 +635,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### DnsProviderUpdateGssapi <a name="DnsProviderUpdateGssapi" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi"></a>
+### DnsProviderUpdateGssapi <a name="DnsProviderUpdateGssapi" id="@cdktn/provider-dns.provider.DnsProviderUpdateGssapi"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-dns.provider.DnsProviderUpdateGssapi.Initializer"></a>
 
 ```typescript
-import { provider } from '@cdktf/provider-dns'
+import { provider } from '@cdktn/provider-dns'
 
 const dnsProviderUpdateGssapi: provider.DnsProviderUpdateGssapi = { ... }
 ```
@@ -649,14 +649,14 @@ const dnsProviderUpdateGssapi: provider.DnsProviderUpdateGssapi = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.keytab">keytab</a></code> | <code>string</code> | This or `password` is required if `username` is set, not supported on Windows. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.password">password</a></code> | <code>string</code> | This or `keytab` is required if `username` is set. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.realm">realm</a></code> | <code>string</code> | The Kerberos realm or Active Directory domain. Value can also be sourced from the DNS_UPDATE_REALM environment variable. |
-| <code><a href="#@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.username">username</a></code> | <code>string</code> | The name of the user to authenticate as. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdateGssapi.property.keytab">keytab</a></code> | <code>string</code> | This or `password` is required if `username` is set, not supported on Windows. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdateGssapi.property.password">password</a></code> | <code>string</code> | This or `keytab` is required if `username` is set. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdateGssapi.property.realm">realm</a></code> | <code>string</code> | The Kerberos realm or Active Directory domain. Value can also be sourced from the DNS_UPDATE_REALM environment variable. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdateGssapi.property.username">username</a></code> | <code>string</code> | The name of the user to authenticate as. |
 
 ---
 
-##### `keytab`<sup>Optional</sup> <a name="keytab" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.keytab"></a>
+##### `keytab`<sup>Optional</sup> <a name="keytab" id="@cdktn/provider-dns.provider.DnsProviderUpdateGssapi.property.keytab"></a>
 
 ```typescript
 public readonly keytab: string;
@@ -672,7 +672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="password" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-dns.provider.DnsProviderUpdateGssapi.property.password"></a>
 
 ```typescript
 public readonly password: string;
@@ -688,7 +688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `realm`<sup>Optional</sup> <a name="realm" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.realm"></a>
+##### `realm`<sup>Optional</sup> <a name="realm" id="@cdktn/provider-dns.provider.DnsProviderUpdateGssapi.property.realm"></a>
 
 ```typescript
 public readonly realm: string;
@@ -702,7 +702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `username`<sup>Optional</sup> <a name="username" id="@cdktf/provider-dns.provider.DnsProviderUpdateGssapi.property.username"></a>
+##### `username`<sup>Optional</sup> <a name="username" id="@cdktn/provider-dns.provider.DnsProviderUpdateGssapi.property.username"></a>
 
 ```typescript
 public readonly username: string;

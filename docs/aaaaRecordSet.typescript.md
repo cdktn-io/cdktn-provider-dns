@@ -1,28 +1,28 @@
-# `aaaaRecordSet` Submodule <a name="`aaaaRecordSet` Submodule" id="@cdktf/provider-dns.aaaaRecordSet"></a>
+# `aaaaRecordSet` Submodule <a name="`aaaaRecordSet` Submodule" id="@cdktn/provider-dns.aaaaRecordSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AaaaRecordSet <a name="AaaaRecordSet" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet"></a>
+### AaaaRecordSet <a name="AaaaRecordSet" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/aaaa_record_set dns_aaaa_record_set}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer"></a>
 
 ```typescript
-import { aaaaRecordSet } from '@cdktf/provider-dns'
+import { aaaaRecordSet } from '@cdktn/provider-dns'
 
 new aaaaRecordSet.AaaaRecordSet(scope: Construct, id: string, config: AaaaRecordSetConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig">AaaaRecordSetConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig">AaaaRecordSetConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig">AaaaRecordSetConfig</a>
+- *Type:* <a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig">AaaaRecordSetConfig</a>
 
 ---
 
@@ -50,36 +50,36 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.resetName">resetName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.resetTtl">resetTtl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.resetName">resetName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.resetTtl">resetTtl</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.toString"></a>
 
 ```typescript
 public toString(): string
@@ -87,25 +87,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -113,7 +113,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -121,7 +121,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -129,19 +129,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -149,7 +149,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -157,7 +157,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -165,151 +165,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -319,7 +319,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -327,7 +327,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -335,7 +335,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -343,7 +343,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -351,7 +351,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -359,7 +359,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -367,19 +367,19 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetName` <a name="resetName" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.resetName"></a>
+##### `resetName` <a name="resetName" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.resetName"></a>
 
 ```typescript
 public resetName(): void
 ```
 
-##### `resetTtl` <a name="resetTtl" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.resetTtl"></a>
+##### `resetTtl` <a name="resetTtl" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.resetTtl"></a>
 
 ```typescript
 public resetTtl(): void
@@ -389,17 +389,17 @@ public resetTtl(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AaaaRecordSet resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AaaaRecordSet resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isConstruct"></a>
 
 ```typescript
-import { aaaaRecordSet } from '@cdktf/provider-dns'
+import { aaaaRecordSet } from '@cdktn/provider-dns'
 
 aaaaRecordSet.AaaaRecordSet.isConstruct(x: any)
 ```
@@ -420,7 +420,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -428,45 +428,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformElement"></a>
 
 ```typescript
-import { aaaaRecordSet } from '@cdktf/provider-dns'
+import { aaaaRecordSet } from '@cdktn/provider-dns'
 
 aaaaRecordSet.AaaaRecordSet.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformResource"></a>
 
 ```typescript
-import { aaaaRecordSet } from '@cdktf/provider-dns'
+import { aaaaRecordSet } from '@cdktn/provider-dns'
 
 aaaaRecordSet.AaaaRecordSet.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport"></a>
 
 ```typescript
-import { aaaaRecordSet } from '@cdktf/provider-dns'
+import { aaaaRecordSet } from '@cdktn/provider-dns'
 
 aaaaRecordSet.AaaaRecordSet.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a AaaaRecordSet resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -474,7 +474,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -482,7 +482,7 @@ The construct id used in the generated config for the AaaaRecordSet to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -492,7 +492,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -504,34 +504,34 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.addressesInput">addressesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.ttlInput">ttlInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.zoneInput">zoneInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.addresses">addresses</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.ttl">ttl</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.zone">zone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.addressesInput">addressesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.ttlInput">ttlInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.zoneInput">zoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.addresses">addresses</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.ttl">ttl</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.zone">zone</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -543,7 +543,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -553,7 +553,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -563,7 +563,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -573,7 +573,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -583,7 +583,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -593,7 +593,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -603,7 +603,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -613,7 +613,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -623,7 +623,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -633,7 +633,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -643,7 +643,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -653,7 +653,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -663,7 +663,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -673,7 +673,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `addressesInput`<sup>Optional</sup> <a name="addressesInput" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.addressesInput"></a>
+##### `addressesInput`<sup>Optional</sup> <a name="addressesInput" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.addressesInput"></a>
 
 ```typescript
 public readonly addressesInput: string[];
@@ -683,7 +683,7 @@ public readonly addressesInput: string[];
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -693,7 +693,7 @@ public readonly idInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -703,7 +703,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `ttlInput`<sup>Optional</sup> <a name="ttlInput" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.ttlInput"></a>
+##### `ttlInput`<sup>Optional</sup> <a name="ttlInput" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.ttlInput"></a>
 
 ```typescript
 public readonly ttlInput: number;
@@ -713,7 +713,7 @@ public readonly ttlInput: number;
 
 ---
 
-##### `zoneInput`<sup>Optional</sup> <a name="zoneInput" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.zoneInput"></a>
+##### `zoneInput`<sup>Optional</sup> <a name="zoneInput" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.zoneInput"></a>
 
 ```typescript
 public readonly zoneInput: string;
@@ -723,7 +723,7 @@ public readonly zoneInput: string;
 
 ---
 
-##### `addresses`<sup>Required</sup> <a name="addresses" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.addresses"></a>
+##### `addresses`<sup>Required</sup> <a name="addresses" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.addresses"></a>
 
 ```typescript
 public readonly addresses: string[];
@@ -733,7 +733,7 @@ public readonly addresses: string[];
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -743,7 +743,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -753,7 +753,7 @@ public readonly name: string;
 
 ---
 
-##### `ttl`<sup>Required</sup> <a name="ttl" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.ttl"></a>
+##### `ttl`<sup>Required</sup> <a name="ttl" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.ttl"></a>
 
 ```typescript
 public readonly ttl: number;
@@ -763,7 +763,7 @@ public readonly ttl: number;
 
 ---
 
-##### `zone`<sup>Required</sup> <a name="zone" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.zone"></a>
+##### `zone`<sup>Required</sup> <a name="zone" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.zone"></a>
 
 ```typescript
 public readonly zone: string;
@@ -777,11 +777,11 @@ public readonly zone: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSet.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -793,12 +793,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AaaaRecordSetConfig <a name="AaaaRecordSetConfig" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig"></a>
+### AaaaRecordSetConfig <a name="AaaaRecordSetConfig" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.Initializer"></a>
 
 ```typescript
-import { aaaaRecordSet } from '@cdktf/provider-dns'
+import { aaaaRecordSet } from '@cdktn/provider-dns'
 
 const aaaaRecordSetConfig: aaaaRecordSet.AaaaRecordSetConfig = { ... }
 ```
@@ -807,22 +807,22 @@ const aaaaRecordSetConfig: aaaaRecordSet.AaaaRecordSetConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.addresses">addresses</a></code> | <code>string[]</code> | The IPv6 addresses this record set will point to. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.zone">zone</a></code> | <code>string</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/aaaa_record_set#id AaaaRecordSet#id}. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.name">name</a></code> | <code>string</code> | The name of the record set. |
-| <code><a href="#@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.ttl">ttl</a></code> | <code>number</code> | The TTL of the record set. Defaults to `3600`. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.addresses">addresses</a></code> | <code>string[]</code> | The IPv6 addresses this record set will point to. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.zone">zone</a></code> | <code>string</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/aaaa_record_set#id AaaaRecordSet#id}. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.name">name</a></code> | <code>string</code> | The name of the record set. |
+| <code><a href="#@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.ttl">ttl</a></code> | <code>number</code> | The TTL of the record set. Defaults to `3600`. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -832,7 +832,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -842,7 +842,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -852,7 +852,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -862,7 +862,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -872,7 +872,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -882,7 +882,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -892,7 +892,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `addresses`<sup>Required</sup> <a name="addresses" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.addresses"></a>
+##### `addresses`<sup>Required</sup> <a name="addresses" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.addresses"></a>
 
 ```typescript
 public readonly addresses: string[];
@@ -906,7 +906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `zone`<sup>Required</sup> <a name="zone" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.zone"></a>
+##### `zone`<sup>Required</sup> <a name="zone" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.zone"></a>
 
 ```typescript
 public readonly zone: string;
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -935,7 +935,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ttl`<sup>Optional</sup> <a name="ttl" id="@cdktf/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.ttl"></a>
+##### `ttl`<sup>Optional</sup> <a name="ttl" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.property.ttl"></a>
 
 ```typescript
 public readonly ttl: number;
