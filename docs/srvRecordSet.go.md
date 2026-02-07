@@ -4,12 +4,12 @@
 
 ### SrvRecordSet <a name="SrvRecordSet" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/srv_record_set dns_srv_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/srv_record_set dns_srv_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/srvrecordset"
 
 srvrecordset.NewSrvRecordSet(scope Construct, id *string, config SrvRecordSetConfig) SrvRecordSet
 ```
@@ -405,7 +405,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/srvrecordset"
 
 srvrecordset.SrvRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/srvrecordset"
 
 srvrecordset.SrvRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ srvrecordset.SrvRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/srvrecordset"
 
 srvrecordset.SrvRecordSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ srvrecordset.SrvRecordSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/srvrecordset"
 
 srvrecordset.SrvRecordSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the SrvRecordSet to import.
 
 The id of the existing SrvRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/srv_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/srv_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/srvrecordset"
 
 &srvrecordset.SrvRecordSetConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ The name of the record set.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/srv_record_set#name SrvRecordSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/srv_record_set#name SrvRecordSet#name}
 
 ---
 
@@ -924,7 +924,7 @@ Zone *string
 
 DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/srv_record_set#zone SrvRecordSet#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/srv_record_set#zone SrvRecordSet#zone}
 
 ---
 
@@ -938,7 +938,7 @@ Srv interface{}
 
 srv block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/srv_record_set#srv SrvRecordSet#srv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/srv_record_set#srv SrvRecordSet#srv}
 
 ---
 
@@ -952,7 +952,7 @@ Ttl *f64
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/srv_record_set#ttl SrvRecordSet#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/srv_record_set#ttl SrvRecordSet#ttl}
 
 ---
 
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSetSrv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/srvrecordset"
 
 &srvrecordset.SrvRecordSetSrv {
 	Port: *f64,
@@ -992,7 +992,7 @@ Port *f64
 
 The port for the service on the target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/srv_record_set#port SrvRecordSet#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/srv_record_set#port SrvRecordSet#port}
 
 ---
 
@@ -1006,7 +1006,7 @@ Priority *f64
 
 The priority for the record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/srv_record_set#priority SrvRecordSet#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/srv_record_set#priority SrvRecordSet#priority}
 
 ---
 
@@ -1020,7 +1020,7 @@ Target *string
 
 The FQDN of the target, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/srv_record_set#target SrvRecordSet#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/srv_record_set#target SrvRecordSet#target}
 
 ---
 
@@ -1034,7 +1034,7 @@ Weight *f64
 
 The weight for the record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/srv_record_set#weight SrvRecordSet#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/srv_record_set#weight SrvRecordSet#weight}
 
 ---
 
@@ -1045,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSetSrvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/srvrecordset"
 
 srvrecordset.NewSrvRecordSetSrvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SrvRecordSetSrvList
 ```
@@ -1205,7 +1205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSetSrvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/srvrecordset"
 
 srvrecordset.NewSrvRecordSetSrvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SrvRecordSetSrvOutputReference
 ```
