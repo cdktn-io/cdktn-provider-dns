@@ -4,7 +4,7 @@
 
 ### DnsProvider <a name="DnsProvider" id="@cdktn/provider-dns.provider.DnsProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs dns}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs dns}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.provider.DnsProvider.Initializer"></a>
 
@@ -247,7 +247,7 @@ The construct id used in the generated config for the DnsProvider to import.
 
 The id of the existing DnsProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -449,7 +449,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#alias DnsProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#alias DnsProvider#alias}
 
 ---
 
@@ -463,7 +463,7 @@ public readonly update: IResolvable | DnsProviderUpdate[];
 
 update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#update DnsProvider#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#update DnsProvider#update}
 
 ---
 
@@ -486,6 +486,7 @@ const dnsProviderUpdate: provider.DnsProviderUpdate = { ... }
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.keyName">keyName</a></code> | <code>string</code> | The name of the TSIG key used to sign the DNS update messages. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.keySecret">keySecret</a></code> | <code>string</code> | Required if `key_name` is set A Base64-encoded string containing the shared secret to be used for TSIG. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.port">port</a></code> | <code>number</code> | The target UDP port on the server where updates are sent to. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.recursive">recursive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the Recursion Desired (RD) flag on DNS queries. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.retries">retries</a></code> | <code>number</code> | How many times to retry on connection timeout. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.server">server</a></code> | <code>string</code> | The hostname or IP address of the DNS server to send updates to. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.timeout">timeout</a></code> | <code>string</code> | Timeout for DNS queries. |
@@ -503,7 +504,7 @@ public readonly gssapi: IResolvable | DnsProviderUpdateGssapi[];
 
 gssapi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#gssapi DnsProvider#gssapi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#gssapi DnsProvider#gssapi}
 
 ---
 
@@ -519,7 +520,7 @@ Required if `key_name` is set.
 
 When using TSIG authentication, the algorithm to use for HMAC. Valid values are `hmac-md5`, `hmac-sha1`, `hmac-sha256` or `hmac-sha512`. Value can also be sourced from the DNS_UPDATE_KEYALGORITHM environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#key_algorithm DnsProvider#key_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#key_algorithm DnsProvider#key_algorithm}
 
 ---
 
@@ -535,7 +536,7 @@ The name of the TSIG key used to sign the DNS update messages.
 
 Value can also be sourced from the DNS_UPDATE_KEYNAME environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#key_name DnsProvider#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#key_name DnsProvider#key_name}
 
 ---
 
@@ -551,7 +552,7 @@ Required if `key_name` is set A Base64-encoded string containing the shared secr
 
 Value can also be sourced from the DNS_UPDATE_KEYSECRET environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#key_secret DnsProvider#key_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#key_secret DnsProvider#key_secret}
 
 ---
 
@@ -567,7 +568,21 @@ The target UDP port on the server where updates are sent to.
 
 Defaults to `53`. Value can also be sourced from the DNS_UPDATE_PORT environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#port DnsProvider#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#port DnsProvider#port}
+
+---
+
+##### `recursive`<sup>Optional</sup> <a name="recursive" id="@cdktn/provider-dns.provider.DnsProviderUpdate.property.recursive"></a>
+
+```typescript
+public readonly recursive: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Enable the Recursion Desired (RD) flag on DNS queries.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#recursive DnsProvider#recursive}
 
 ---
 
@@ -583,7 +598,7 @@ How many times to retry on connection timeout.
 
 Defaults to `3`. Value can also be sourced from the DNS_UPDATE_RETRIES environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#retries DnsProvider#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#retries DnsProvider#retries}
 
 ---
 
@@ -599,7 +614,7 @@ The hostname or IP address of the DNS server to send updates to.
 
 Value can also be sourced from the DNS_UPDATE_SERVER environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#server DnsProvider#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#server DnsProvider#server}
 
 ---
 
@@ -615,7 +630,7 @@ Timeout for DNS queries.
 
 Valid values are durations expressed as `500ms`, etc. or a plain number which is treated as whole seconds. Value can also be sourced from the DNS_UPDATE_TIMEOUT environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#timeout DnsProvider#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#timeout DnsProvider#timeout}
 
 ---
 
@@ -631,7 +646,7 @@ Transport to use for DNS queries.
 
 Valid values are `udp`, `udp4`, `udp6`, `tcp`, `tcp4`, or `tcp6`. Any UDP transport will retry automatically with the equivalent TCP transport in the event of a truncated response. Defaults to `udp`. Value can also be sourced from the DNS_UPDATE_TRANSPORT environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#transport DnsProvider#transport}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#transport DnsProvider#transport}
 
 ---
 
@@ -668,7 +683,7 @@ This or `password` is required if `username` is set, not supported on Windows.
 
 The path to a keytab file containing a key for `username`. Value can also be sourced from the DNS_UPDATE_KEYTAB environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#keytab DnsProvider#keytab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#keytab DnsProvider#keytab}
 
 ---
 
@@ -684,7 +699,7 @@ This or `keytab` is required if `username` is set.
 
 The matching password for `username`. Value can also be sourced from the DNS_UPDATE_PASSWORD environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#password DnsProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#password DnsProvider#password}
 
 ---
 
@@ -698,7 +713,7 @@ public readonly realm: string;
 
 The Kerberos realm or Active Directory domain. Value can also be sourced from the DNS_UPDATE_REALM environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#realm DnsProvider#realm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#realm DnsProvider#realm}
 
 ---
 
@@ -714,7 +729,7 @@ The name of the user to authenticate as.
 
 If not set the current user session will be used. Value can also be sourced from the DNS_UPDATE_USERNAME environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs#username DnsProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#username DnsProvider#username}
 
 ---
 

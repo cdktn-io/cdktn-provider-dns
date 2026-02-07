@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record
+// https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface CnameRecordConfig extends cdktf.TerraformMetaArguments {
   /**
   * The canonical name this record will point to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#cname CnameRecord#cname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record#cname CnameRecord#cname}
   */
   readonly cname: string;
   /**
   * The name of the record. The `zone` argument will be appended to this value to create the full record path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#name CnameRecord#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record#name CnameRecord#name}
   */
   readonly name: string;
   /**
   * The TTL of the record set. Defaults to `3600`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#ttl CnameRecord#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record#ttl CnameRecord#ttl}
   */
   readonly ttl?: number;
   /**
   * DNS zone the record belongs to. It must be an FQDN, that is, include the trailing dot.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#zone CnameRecord#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record#zone CnameRecord#zone}
   */
   readonly zone: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record dns_cname_record}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record dns_cname_record}
 */
 export class CnameRecord extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class CnameRecord extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CnameRecord resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CnameRecord to import
-  * @param importFromId The id of the existing CnameRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CnameRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CnameRecord to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class CnameRecord extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record dns_cname_record} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record dns_cname_record} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class CnameRecord extends cdktf.TerraformResource {
       terraformResourceType: 'dns_cname_record',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.4.3',
+        providerVersion: '3.5.0',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,

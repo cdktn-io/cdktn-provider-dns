@@ -4,7 +4,7 @@
 
 ### ARecordSet <a name="ARecordSet" id="@cdktn/provider-dns.aRecordSet.ARecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/a_record_set dns_a_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/a_record_set dns_a_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.aRecordSet.ARecordSet.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ARecordSet to import.
 
 The id of the existing ARecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/a_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/a_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -816,7 +816,7 @@ const aRecordSetConfig: aRecordSet.ARecordSetConfig = { ... }
 | <code><a href="#@cdktn/provider-dns.aRecordSet.ARecordSetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.aRecordSet.ARecordSetConfig.property.addresses">addresses</a></code> | <code>string[]</code> | The IPv4 addresses this record set will point to. |
 | <code><a href="#@cdktn/provider-dns.aRecordSet.ARecordSetConfig.property.zone">zone</a></code> | <code>string</code> | DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot. |
-| <code><a href="#@cdktn/provider-dns.aRecordSet.ARecordSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/a_record_set#id ARecordSet#id}. |
+| <code><a href="#@cdktn/provider-dns.aRecordSet.ARecordSetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/a_record_set#id ARecordSet#id}. |
 | <code><a href="#@cdktn/provider-dns.aRecordSet.ARecordSetConfig.property.name">name</a></code> | <code>string</code> | The name of the record set. |
 | <code><a href="#@cdktn/provider-dns.aRecordSet.ARecordSetConfig.property.ttl">ttl</a></code> | <code>number</code> | The TTL of the record set. Defaults to `3600`. |
 
@@ -902,7 +902,7 @@ public readonly addresses: string[];
 
 The IPv4 addresses this record set will point to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/a_record_set#addresses ARecordSet#addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/a_record_set#addresses ARecordSet#addresses}
 
 ---
 
@@ -916,7 +916,7 @@ public readonly zone: string;
 
 DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/a_record_set#zone ARecordSet#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/a_record_set#zone ARecordSet#zone}
 
 ---
 
@@ -928,7 +928,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/a_record_set#id ARecordSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/a_record_set#id ARecordSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -947,7 +947,7 @@ The name of the record set.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/a_record_set#name ARecordSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/a_record_set#name ARecordSet#name}
 
 ---
 
@@ -961,7 +961,7 @@ public readonly ttl: number;
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/a_record_set#ttl ARecordSet#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/a_record_set#ttl ARecordSet#ttl}
 
 ---
 

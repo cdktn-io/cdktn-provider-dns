@@ -4,7 +4,7 @@
 
 ### DataDnsMxRecordSet <a name="DataDnsMxRecordSet" id="@cdktn/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/mx_record_set dns_mx_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/mx_record_set dns_mx_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDnsMxRecordSet to impo
 
 The id of the existing DataDnsMxRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/mx_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/mx_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -687,7 +687,7 @@ public readonly domain: string;
 
 Domain to look up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/mx_record_set#domain DataDnsMxRecordSet#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/mx_record_set#domain DataDnsMxRecordSet#domain}
 
 ---
 

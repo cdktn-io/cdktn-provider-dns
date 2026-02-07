@@ -4,12 +4,12 @@
 
 ### MxRecordSet <a name="MxRecordSet" id="@cdktn/provider-dns.mxRecordSet.MxRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set dns_mx_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set dns_mx_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.mxRecordSet.MxRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/mxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/mxrecordset"
 
 mxrecordset.NewMxRecordSet(scope Construct, id *string, config MxRecordSetConfig) MxRecordSet
 ```
@@ -412,7 +412,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-dns.mxRecordSet.MxRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/mxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/mxrecordset"
 
 mxrecordset.MxRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-dns.mxRecordSet.MxRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/mxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/mxrecordset"
 
 mxrecordset.MxRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ mxrecordset.MxRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-dns.mxRecordSet.MxRecordSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/mxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/mxrecordset"
 
 mxrecordset.MxRecordSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ mxrecordset.MxRecordSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-dns.mxRecordSet.MxRecordSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/mxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/mxrecordset"
 
 mxrecordset.MxRecordSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the MxRecordSet to import.
 
 The id of the existing MxRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,7 +800,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.mxRecordSet.MxRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/mxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/mxrecordset"
 
 &mxrecordset.MxRecordSetConfig {
 	Connection: interface{},
@@ -915,7 +915,7 @@ Zone *string
 
 DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#zone MxRecordSet#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#zone MxRecordSet#zone}
 
 ---
 
@@ -929,7 +929,7 @@ Mx interface{}
 
 mx block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#mx MxRecordSet#mx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#mx MxRecordSet#mx}
 
 ---
 
@@ -945,7 +945,7 @@ The name of the record set.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#name MxRecordSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#name MxRecordSet#name}
 
 ---
 
@@ -959,7 +959,7 @@ Ttl *f64
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
 
 ---
 
@@ -968,7 +968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.mxRecordSet.MxRecordSetMx.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/mxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/mxrecordset"
 
 &mxrecordset.MxRecordSetMx {
 	Exchange: *string,
@@ -995,7 +995,7 @@ Exchange *string
 
 The FQDN of the mail exchange, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#exchange MxRecordSet#exchange}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#exchange MxRecordSet#exchange}
 
 ---
 
@@ -1009,7 +1009,7 @@ Preference *f64
 
 The preference for the record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#preference MxRecordSet#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#preference MxRecordSet#preference}
 
 ---
 
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.mxRecordSet.MxRecordSetMxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/mxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/mxrecordset"
 
 mxrecordset.NewMxRecordSetMxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MxRecordSetMxList
 ```
@@ -1180,7 +1180,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.mxRecordSet.MxRecordSetMxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/mxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/mxrecordset"
 
 mxrecordset.NewMxRecordSetMxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MxRecordSetMxOutputReference
 ```

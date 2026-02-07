@@ -4,12 +4,12 @@
 
 ### DataDnsAaaaRecordSet <a name="DataDnsAaaaRecordSet" id="@cdktn/provider-dns.dataDnsAaaaRecordSet.DataDnsAaaaRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/aaaa_record_set dns_aaaa_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/aaaa_record_set dns_aaaa_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.dataDnsAaaaRecordSet.DataDnsAaaaRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnsaaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/datadnsaaaarecordset"
 
 datadnsaaaarecordset.NewDataDnsAaaaRecordSet(scope Construct, id *string, config DataDnsAaaaRecordSetConfig) DataDnsAaaaRecordSet
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-dns.dataDnsAaaaRecordSet.DataDnsAaaaRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnsaaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/datadnsaaaarecordset"
 
 datadnsaaaarecordset.DataDnsAaaaRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-dns.dataDnsAaaaRecordSet.DataDnsAaaaRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnsaaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/datadnsaaaarecordset"
 
 datadnsaaaarecordset.DataDnsAaaaRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datadnsaaaarecordset.DataDnsAaaaRecordSet_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-dns.dataDnsAaaaRecordSet.DataDnsAaaaRecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnsaaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/datadnsaaaarecordset"
 
 datadnsaaaarecordset.DataDnsAaaaRecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datadnsaaaarecordset.DataDnsAaaaRecordSet_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-dns.dataDnsAaaaRecordSet.DataDnsAaaaRecordSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnsaaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/datadnsaaaarecordset"
 
 datadnsaaaarecordset.DataDnsAaaaRecordSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDnsAaaaRecordSet to im
 
 The id of the existing DataDnsAaaaRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/aaaa_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/aaaa_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.dataDnsAaaaRecordSet.DataDnsAaaaRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/datadnsaaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/datadnsaaaarecordset"
 
 &datadnsaaaarecordset.DataDnsAaaaRecordSetConfig {
 	Connection: interface{},
@@ -696,7 +696,7 @@ Host *string
 
 Host to look up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/aaaa_record_set#host DataDnsAaaaRecordSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/aaaa_record_set#host DataDnsAaaaRecordSet#host}
 
 ---
 
