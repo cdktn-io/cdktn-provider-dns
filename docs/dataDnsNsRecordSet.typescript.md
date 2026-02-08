@@ -4,7 +4,7 @@
 
 ### DataDnsNsRecordSet <a name="DataDnsNsRecordSet" id="@cdktn/provider-dns.dataDnsNsRecordSet.DataDnsNsRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/ns_record_set dns_ns_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/ns_record_set dns_ns_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.dataDnsNsRecordSet.DataDnsNsRecordSet.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataDnsNsRecordSet to impo
 
 The id of the existing DataDnsNsRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/ns_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/ns_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -687,7 +687,7 @@ public readonly host: string;
 
 Host to look up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/ns_record_set#host DataDnsNsRecordSet#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/ns_record_set#host DataDnsNsRecordSet#host}
 
 ---
 
