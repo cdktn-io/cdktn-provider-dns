@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set
+// https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface MxRecordSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the record set. The `zone` argument will be appended to this value to create the full record path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#name MxRecordSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#name MxRecordSet#name}
   */
   readonly name?: string;
   /**
   * The TTL of the record set. Defaults to `3600`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
   */
   readonly ttl?: number;
   /**
   * DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#zone MxRecordSet#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#zone MxRecordSet#zone}
   */
   readonly zone: string;
   /**
   * mx block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#mx MxRecordSet#mx}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#mx MxRecordSet#mx}
   */
   readonly mx?: MxRecordSetMx[] | cdktf.IResolvable;
 }
@@ -41,13 +41,13 @@ export interface MxRecordSetMx {
   /**
   * The FQDN of the mail exchange, include the trailing dot.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#exchange MxRecordSet#exchange}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#exchange MxRecordSet#exchange}
   */
   readonly exchange: string;
   /**
   * The preference for the record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#preference MxRecordSet#preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#preference MxRecordSet#preference}
   */
   readonly preference: number;
 }
@@ -186,7 +186,7 @@ export class MxRecordSetMxList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set dns_mx_record_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set dns_mx_record_set}
 */
 export class MxRecordSet extends cdktf.TerraformResource {
 
@@ -202,7 +202,7 @@ export class MxRecordSet extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a MxRecordSet resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MxRecordSet to import
-  * @param importFromId The id of the existing MxRecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MxRecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MxRecordSet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -214,7 +214,7 @@ export class MxRecordSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/mx_record_set dns_mx_record_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set dns_mx_record_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -225,7 +225,7 @@ export class MxRecordSet extends cdktf.TerraformResource {
       terraformResourceType: 'dns_mx_record_set',
       terraformGeneratorMetadata: {
         providerName: 'dns',
-        providerVersion: '3.4.3',
+        providerVersion: '3.5.0',
         providerVersionConstraint: '~> 3.2'
       },
       provider: config.provider,

@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for hashicorp/dns provider version 3.4.3
+# CDKTF prebuilt bindings for hashicorp/dns provider version 3.5.0
 
-This repo builds and publishes the [Terraform dns provider](https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform dns provider](https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -19,17 +19,17 @@ The PyPI package is available at [https://pypi.org/project/cdktn-provider-dns](h
 
 ### Nuget
 
-The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Dns](https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Dns).
+The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Providers.Dns](https://www.nuget.org/packages/Io.Cdktn.Providers.Dns).
 
-`dotnet add package Io.Cdktn.Cdktn.Providers.Dns`
+`dotnet add package Io.Cdktn.Providers.Dns`
 
 ### Maven
 
-The Maven package is available at [https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-dns](https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-dns).
+The Maven package is available at [https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-dns](https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-dns).
 
 ```
 <dependency>
-    <groupId>com.Io.Cdktn</groupId>
+    <groupId>io.cdktn</groupId>
     <artifactId>cdktn-provider-dns</artifactId>
     <version>[REPLACE WITH DESIRED VERSION]</version>
 </dependency>
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform dns provider version 1:1. 
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf) - Last official release
-- [Terraform dns provider](https://registry.terraform.io/providers/hashicorp/dns/3.4.3)
+- [Terraform dns provider](https://registry.terraform.io/providers/hashicorp/dns/3.5.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
