@@ -4,12 +4,12 @@
 
 ### PtrRecord <a name="PtrRecord" id="@cdktn/provider-dns.ptrRecord.PtrRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/ptr_record dns_ptr_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/ptr_record dns_ptr_record}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.ptrRecord.PtrRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/ptrrecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/ptrrecord"
 
 ptrrecord.NewPtrRecord(scope Construct, id *string, config PtrRecordConfig) PtrRecord
 ```
@@ -392,7 +392,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-dns.ptrRecord.PtrRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/ptrrecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/ptrrecord"
 
 ptrrecord.PtrRecord_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-dns.ptrRecord.PtrRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/ptrrecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/ptrrecord"
 
 ptrrecord.PtrRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ ptrrecord.PtrRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-dns.ptrRecord.PtrRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/ptrrecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/ptrrecord"
 
 ptrrecord.PtrRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ ptrrecord.PtrRecord_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-dns.ptrRecord.PtrRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/ptrrecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/ptrrecord"
 
 ptrrecord.PtrRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the PtrRecord to import.
 
 The id of the existing PtrRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/ptr_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/ptr_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.ptrRecord.PtrRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/ptrrecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/ptrrecord"
 
 &ptrrecord.PtrRecordConfig {
 	Connection: interface{},
@@ -895,7 +895,7 @@ Ptr *string
 
 The canonical name this record will point to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/ptr_record#ptr PtrRecord#ptr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/ptr_record#ptr PtrRecord#ptr}
 
 ---
 
@@ -909,7 +909,7 @@ Zone *string
 
 DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/ptr_record#zone PtrRecord#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/ptr_record#zone PtrRecord#zone}
 
 ---
 
@@ -925,7 +925,7 @@ The name of the record.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/ptr_record#name PtrRecord#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/ptr_record#name PtrRecord#name}
 
 ---
 
@@ -939,7 +939,7 @@ Ttl *f64
 
 The TTL of the record. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/ptr_record#ttl PtrRecord#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/ptr_record#ttl PtrRecord#ttl}
 
 ---
 

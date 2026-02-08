@@ -4,12 +4,12 @@
 
 ### CnameRecord <a name="CnameRecord" id="@cdktn/provider-dns.cnameRecord.CnameRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record dns_cname_record}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record dns_cname_record}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.cnameRecord.CnameRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/cnamerecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/cnamerecord"
 
 cnamerecord.NewCnameRecord(scope Construct, id *string, config CnameRecordConfig) CnameRecord
 ```
@@ -385,7 +385,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-dns.cnameRecord.CnameRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/cnamerecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/cnamerecord"
 
 cnamerecord.CnameRecord_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-dns.cnameRecord.CnameRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/cnamerecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/cnamerecord"
 
 cnamerecord.CnameRecord_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ cnamerecord.CnameRecord_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-dns.cnameRecord.CnameRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/cnamerecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/cnamerecord"
 
 cnamerecord.CnameRecord_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ cnamerecord.CnameRecord_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-dns.cnameRecord.CnameRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/cnamerecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/cnamerecord"
 
 cnamerecord.CnameRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the CnameRecord to import.
 
 The id of the existing CnameRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.cnameRecord.CnameRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v9/cnamerecord"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/cnamerecord"
 
 &cnamerecord.CnameRecordConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ Cname *string
 
 The canonical name this record will point to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#cname CnameRecord#cname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record#cname CnameRecord#cname}
 
 ---
 
@@ -904,7 +904,7 @@ The name of the record.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#name CnameRecord#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record#name CnameRecord#name}
 
 ---
 
@@ -918,7 +918,7 @@ Zone *string
 
 DNS zone the record belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#zone CnameRecord#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record#zone CnameRecord#zone}
 
 ---
 
@@ -932,7 +932,7 @@ Ttl *f64
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/resources/cname_record#ttl CnameRecord#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record#ttl CnameRecord#ttl}
 
 ---
 

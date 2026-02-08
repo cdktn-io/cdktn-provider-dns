@@ -4,7 +4,7 @@
 
 ### DataDnsSrvRecordSet <a name="DataDnsSrvRecordSet" id="@cdktn/provider-dns.dataDnsSrvRecordSet.DataDnsSrvRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/srv_record_set dns_srv_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/srv_record_set dns_srv_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.dataDnsSrvRecordSet.DataDnsSrvRecordSet.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Service to look up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/srv_record_set#service DataDnsSrvRecordSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/srv_record_set#service DataDnsSrvRecordSet#service}
 
 ---
 
@@ -465,7 +465,7 @@ The construct id used in the generated config for the DataDnsSrvRecordSet to imp
 
 The id of the existing DataDnsSrvRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/srv_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/srv_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -796,7 +796,7 @@ service: str
 
 Service to look up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.4.3/docs/data-sources/srv_record_set#service DataDnsSrvRecordSet#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/srv_record_set#service DataDnsSrvRecordSet#service}
 
 ---
 
