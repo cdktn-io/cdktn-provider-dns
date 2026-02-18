@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.provider.DnsProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/provider"
 
 provider.NewDnsProvider(scope Construct, id *string, config DnsProviderConfig) DnsProvider
 ```
@@ -151,14 +151,14 @@ func ResetUpdate()
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DnsProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a DnsProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-dns.provider.DnsProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/provider"
 
 provider.DnsProvider_IsConstruct(x interface{}) *bool
 ```
@@ -190,7 +190,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-dns.provider.DnsProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/provider"
 
 provider.DnsProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -204,7 +204,7 @@ provider.DnsProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktn/provider-dns.provider.DnsProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/provider"
 
 provider.DnsProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -218,12 +218,12 @@ provider.DnsProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/provider"
 
 provider.DnsProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a DnsProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DnsProvider resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.scope"></a>
 
@@ -253,7 +253,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DnsProvider to import is found.
 
@@ -264,12 +264,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.metaAttributes">MetaAttributes</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.alias">Alias</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
@@ -296,7 +296,7 @@ The tree node.
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
@@ -346,7 +346,7 @@ func TerraformResourceType() *string
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -425,7 +425,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.provider.DnsProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/provider"
 
 &provider.DnsProviderConfig {
 	Alias: *string,
@@ -475,7 +475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.provider.DnsProviderUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/provider"
 
 &provider.DnsProviderUpdate {
 	Gssapi: interface{},
@@ -669,7 +669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.provider.DnsProviderUpdateGssapi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v10/provider"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/provider"
 
 &provider.DnsProviderUpdateGssapi {
 	Keytab: *string,
