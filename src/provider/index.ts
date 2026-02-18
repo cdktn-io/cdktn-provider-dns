@@ -7,7 +7,7 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
@@ -23,7 +23,7 @@ export interface DnsProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#update DnsProvider#update}
   */
-  readonly update?: DnsProviderUpdate[] | cdktf.IResolvable;
+  readonly update?: DnsProviderUpdate[] | cdktn.IResolvable;
 }
 export interface DnsProviderUpdateGssapi {
   /**
@@ -52,46 +52,46 @@ export interface DnsProviderUpdateGssapi {
   readonly username?: string;
 }
 
-export function dnsProviderUpdateGssapiToTerraform(struct?: DnsProviderUpdateGssapi | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsProviderUpdateGssapiToTerraform(struct?: DnsProviderUpdateGssapi | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    keytab: cdktf.stringToTerraform(struct!.keytab),
-    password: cdktf.stringToTerraform(struct!.password),
-    realm: cdktf.stringToTerraform(struct!.realm),
-    username: cdktf.stringToTerraform(struct!.username),
+    keytab: cdktn.stringToTerraform(struct!.keytab),
+    password: cdktn.stringToTerraform(struct!.password),
+    realm: cdktn.stringToTerraform(struct!.realm),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function dnsProviderUpdateGssapiToHclTerraform(struct?: DnsProviderUpdateGssapi | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsProviderUpdateGssapiToHclTerraform(struct?: DnsProviderUpdateGssapi | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     keytab: {
-      value: cdktf.stringToHclTerraform(struct!.keytab),
+      value: cdktn.stringToHclTerraform(struct!.keytab),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     realm: {
-      value: cdktf.stringToHclTerraform(struct!.realm),
+      value: cdktn.stringToHclTerraform(struct!.realm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -133,7 +133,7 @@ export interface DnsProviderUpdate {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#recursive DnsProvider#recursive}
   */
-  readonly recursive?: boolean | cdktf.IResolvable;
+  readonly recursive?: boolean | cdktn.IResolvable;
   /**
   * How many times to retry on connection timeout. Defaults to `3`. Value can also be sourced from the DNS_UPDATE_RETRIES environment variable.
   *
@@ -163,91 +163,91 @@ export interface DnsProviderUpdate {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#gssapi DnsProvider#gssapi}
   */
-  readonly gssapi?: DnsProviderUpdateGssapi[] | cdktf.IResolvable;
+  readonly gssapi?: DnsProviderUpdateGssapi[] | cdktn.IResolvable;
 }
 
-export function dnsProviderUpdateToTerraform(struct?: DnsProviderUpdate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsProviderUpdateToTerraform(struct?: DnsProviderUpdate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_algorithm: cdktf.stringToTerraform(struct!.keyAlgorithm),
-    key_name: cdktf.stringToTerraform(struct!.keyName),
-    key_secret: cdktf.stringToTerraform(struct!.keySecret),
-    port: cdktf.numberToTerraform(struct!.port),
-    recursive: cdktf.booleanToTerraform(struct!.recursive),
-    retries: cdktf.numberToTerraform(struct!.retries),
-    server: cdktf.stringToTerraform(struct!.server),
-    timeout: cdktf.stringToTerraform(struct!.timeout),
-    transport: cdktf.stringToTerraform(struct!.transport),
-    gssapi: cdktf.listMapper(dnsProviderUpdateGssapiToTerraform, true)(struct!.gssapi),
+    key_algorithm: cdktn.stringToTerraform(struct!.keyAlgorithm),
+    key_name: cdktn.stringToTerraform(struct!.keyName),
+    key_secret: cdktn.stringToTerraform(struct!.keySecret),
+    port: cdktn.numberToTerraform(struct!.port),
+    recursive: cdktn.booleanToTerraform(struct!.recursive),
+    retries: cdktn.numberToTerraform(struct!.retries),
+    server: cdktn.stringToTerraform(struct!.server),
+    timeout: cdktn.stringToTerraform(struct!.timeout),
+    transport: cdktn.stringToTerraform(struct!.transport),
+    gssapi: cdktn.listMapper(dnsProviderUpdateGssapiToTerraform, true)(struct!.gssapi),
   }
 }
 
 
-export function dnsProviderUpdateToHclTerraform(struct?: DnsProviderUpdate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsProviderUpdateToHclTerraform(struct?: DnsProviderUpdate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.keyAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.keyAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_name: {
-      value: cdktf.stringToHclTerraform(struct!.keyName),
+      value: cdktn.stringToHclTerraform(struct!.keyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_secret: {
-      value: cdktf.stringToHclTerraform(struct!.keySecret),
+      value: cdktn.stringToHclTerraform(struct!.keySecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     recursive: {
-      value: cdktf.booleanToHclTerraform(struct!.recursive),
+      value: cdktn.booleanToHclTerraform(struct!.recursive),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     retries: {
-      value: cdktf.numberToHclTerraform(struct!.retries),
+      value: cdktn.numberToHclTerraform(struct!.retries),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     server: {
-      value: cdktf.stringToHclTerraform(struct!.server),
+      value: cdktn.stringToHclTerraform(struct!.server),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeout: {
-      value: cdktf.stringToHclTerraform(struct!.timeout),
+      value: cdktn.stringToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     transport: {
-      value: cdktf.stringToHclTerraform(struct!.transport),
+      value: cdktn.stringToHclTerraform(struct!.transport),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     gssapi: {
-      value: cdktf.listMapperHcl(dnsProviderUpdateGssapiToHclTerraform, true)(struct!.gssapi),
+      value: cdktn.listMapperHcl(dnsProviderUpdateGssapiToHclTerraform, true)(struct!.gssapi),
       isBlock: true,
       type: "list",
       storageClassType: "DnsProviderUpdateGssapiList",
@@ -262,7 +262,7 @@ export function dnsProviderUpdateToHclTerraform(struct?: DnsProviderUpdate | cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs dns}
 */
-export class DnsProvider extends cdktf.TerraformProvider {
+export class DnsProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -273,14 +273,14 @@ export class DnsProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DnsProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DnsProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsProvider to import
   * @param importFromId The id of the existing DnsProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "dns", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "dns", importId: importFromId, provider });
       }
 
   // ===========
@@ -329,11 +329,11 @@ export class DnsProvider extends cdktf.TerraformProvider {
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: DnsProviderUpdate[] | cdktf.IResolvable; 
+  private _update?: DnsProviderUpdate[] | cdktn.IResolvable; 
   public get update() {
     return this._update;
   }
-  public set update(value: DnsProviderUpdate[] | cdktf.IResolvable | undefined) {
+  public set update(value: DnsProviderUpdate[] | cdktn.IResolvable | undefined) {
     this._update = value;
   }
   public resetUpdate() {
@@ -350,21 +350,21 @@ export class DnsProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias: cdktf.stringToTerraform(this._alias),
-      update: cdktf.listMapper(dnsProviderUpdateToTerraform, true)(this._update),
+      alias: cdktn.stringToTerraform(this._alias),
+      update: cdktn.listMapper(dnsProviderUpdateToTerraform, true)(this._update),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       update: {
-        value: cdktf.listMapperHcl(dnsProviderUpdateToHclTerraform, true)(this._update),
+        value: cdktn.listMapperHcl(dnsProviderUpdateToHclTerraform, true)(this._update),
         isBlock: true,
         type: "list",
         storageClassType: "DnsProviderUpdateList",

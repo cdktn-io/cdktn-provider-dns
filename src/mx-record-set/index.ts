@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MxRecordSetConfig extends cdktf.TerraformMetaArguments {
+export interface MxRecordSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the record set. The `zone` argument will be appended to this value to create the full record path.
   *
@@ -35,7 +35,7 @@ export interface MxRecordSetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#mx MxRecordSet#mx}
   */
-  readonly mx?: MxRecordSetMx[] | cdktf.IResolvable;
+  readonly mx?: MxRecordSetMx[] | cdktn.IResolvable;
 }
 export interface MxRecordSetMx {
   /**
@@ -52,32 +52,32 @@ export interface MxRecordSetMx {
   readonly preference: number;
 }
 
-export function mxRecordSetMxToTerraform(struct?: MxRecordSetMx | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mxRecordSetMxToTerraform(struct?: MxRecordSetMx | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exchange: cdktf.stringToTerraform(struct!.exchange),
-    preference: cdktf.numberToTerraform(struct!.preference),
+    exchange: cdktn.stringToTerraform(struct!.exchange),
+    preference: cdktn.numberToTerraform(struct!.preference),
   }
 }
 
 
-export function mxRecordSetMxToHclTerraform(struct?: MxRecordSetMx | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mxRecordSetMxToHclTerraform(struct?: MxRecordSetMx | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exchange: {
-      value: cdktf.stringToHclTerraform(struct!.exchange),
+      value: cdktn.stringToHclTerraform(struct!.exchange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     preference: {
-      value: cdktf.numberToHclTerraform(struct!.preference),
+      value: cdktn.numberToHclTerraform(struct!.preference),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -88,9 +88,9 @@ export function mxRecordSetMxToHclTerraform(struct?: MxRecordSetMx | cdktf.IReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MxRecordSetMxOutputReference extends cdktf.ComplexObject {
+export class MxRecordSetMxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -98,11 +98,11 @@ export class MxRecordSetMxOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MxRecordSetMx | cdktf.IResolvable | undefined {
+  public get internalValue(): MxRecordSetMx | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -119,14 +119,14 @@ export class MxRecordSetMxOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MxRecordSetMx | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MxRecordSetMx | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._exchange = undefined;
       this._preference = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -165,15 +165,15 @@ export class MxRecordSetMxOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class MxRecordSetMxList extends cdktf.ComplexList {
-  public internalValue? : MxRecordSetMx[] | cdktf.IResolvable
+export class MxRecordSetMxList extends cdktn.ComplexList {
+  public internalValue? : MxRecordSetMx[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -188,7 +188,7 @@ export class MxRecordSetMxList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set dns_mx_record_set}
 */
-export class MxRecordSet extends cdktf.TerraformResource {
+export class MxRecordSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -199,14 +199,14 @@ export class MxRecordSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MxRecordSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MxRecordSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MxRecordSet to import
   * @param importFromId The id of the existing MxRecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MxRecordSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "dns_mx_record_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "dns_mx_record_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -301,7 +301,7 @@ export class MxRecordSet extends cdktf.TerraformResource {
   public get mx() {
     return this._mx;
   }
-  public putMx(value: MxRecordSetMx[] | cdktf.IResolvable) {
+  public putMx(value: MxRecordSetMx[] | cdktn.IResolvable) {
     this._mx.internalValue = value;
   }
   public resetMx() {
@@ -318,35 +318,35 @@ export class MxRecordSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      zone: cdktf.stringToTerraform(this._zone),
-      mx: cdktf.listMapper(mxRecordSetMxToTerraform, true)(this._mx.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      zone: cdktn.stringToTerraform(this._zone),
+      mx: cdktn.listMapper(mxRecordSetMxToTerraform, true)(this._mx.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mx: {
-        value: cdktf.listMapperHcl(mxRecordSetMxToHclTerraform, true)(this._mx.internalValue),
+        value: cdktn.listMapperHcl(mxRecordSetMxToHclTerraform, true)(this._mx.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MxRecordSetMxList",

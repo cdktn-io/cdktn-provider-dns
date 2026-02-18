@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AaaaRecordSetConfig extends cdktf.TerraformMetaArguments {
+export interface AaaaRecordSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * The IPv6 addresses this record set will point to.
   *
@@ -48,7 +48,7 @@ export interface AaaaRecordSetConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/aaaa_record_set dns_aaaa_record_set}
 */
-export class AaaaRecordSet extends cdktf.TerraformResource {
+export class AaaaRecordSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class AaaaRecordSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AaaaRecordSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AaaaRecordSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AaaaRecordSet to import
   * @param importFromId The id of the existing AaaaRecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/aaaa_record_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AaaaRecordSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "dns_aaaa_record_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "dns_aaaa_record_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -110,7 +110,7 @@ export class AaaaRecordSet extends cdktf.TerraformResource {
   // addresses - computed: false, optional: false, required: true
   private _addresses?: string[]; 
   public get addresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('addresses'));
   }
   public set addresses(value: string[]) {
     this._addresses = value;
@@ -187,42 +187,42 @@ export class AaaaRecordSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._addresses),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      zone: cdktf.stringToTerraform(this._zone),
+      addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._addresses),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      zone: cdktn.stringToTerraform(this._zone),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._addresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._addresses),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

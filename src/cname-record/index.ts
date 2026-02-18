@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CnameRecordConfig extends cdktf.TerraformMetaArguments {
+export interface CnameRecordConfig extends cdktn.TerraformMetaArguments {
   /**
   * The canonical name this record will point to.
   *
@@ -41,7 +41,7 @@ export interface CnameRecordConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record dns_cname_record}
 */
-export class CnameRecord extends cdktf.TerraformResource {
+export class CnameRecord extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class CnameRecord extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CnameRecord resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CnameRecord resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CnameRecord to import
   * @param importFromId The id of the existing CnameRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/cname_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CnameRecord to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "dns_cname_record", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "dns_cname_record", importId: importFromId, provider });
       }
 
   // ===========
@@ -165,35 +165,35 @@ export class CnameRecord extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cname: cdktf.stringToTerraform(this._cname),
-      name: cdktf.stringToTerraform(this._name),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      zone: cdktf.stringToTerraform(this._zone),
+      cname: cdktn.stringToTerraform(this._cname),
+      name: cdktn.stringToTerraform(this._name),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      zone: cdktn.stringToTerraform(this._zone),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cname: {
-        value: cdktf.stringToHclTerraform(this._cname),
+        value: cdktn.stringToHclTerraform(this._cname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
