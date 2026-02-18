@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDnsPtrRecordSetConfig extends cdktf.TerraformMetaArguments {
+export interface DataDnsPtrRecordSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * IP address to look up.
   *
@@ -23,7 +23,7 @@ export interface DataDnsPtrRecordSetConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/ptr_record_set dns_ptr_record_set}
 */
-export class DataDnsPtrRecordSet extends cdktf.TerraformDataSource {
+export class DataDnsPtrRecordSet extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -34,14 +34,14 @@ export class DataDnsPtrRecordSet extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDnsPtrRecordSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDnsPtrRecordSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDnsPtrRecordSet to import
   * @param importFromId The id of the existing DataDnsPtrRecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/ptr_record_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDnsPtrRecordSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "dns_ptr_record_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "dns_ptr_record_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -107,14 +107,14 @@ export class DataDnsPtrRecordSet extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      ip_address: cdktf.stringToTerraform(this._ipAddress),
+      ip_address: cdktn.stringToTerraform(this._ipAddress),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       ip_address: {
-        value: cdktf.stringToHclTerraform(this._ipAddress),
+        value: cdktn.stringToHclTerraform(this._ipAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

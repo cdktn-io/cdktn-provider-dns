@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PtrRecordConfig extends cdktf.TerraformMetaArguments {
+export interface PtrRecordConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the record. The `zone` argument will be appended to this value to create the full record path.
   *
@@ -41,7 +41,7 @@ export interface PtrRecordConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/ptr_record dns_ptr_record}
 */
-export class PtrRecord extends cdktf.TerraformResource {
+export class PtrRecord extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class PtrRecord extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PtrRecord resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PtrRecord resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PtrRecord to import
   * @param importFromId The id of the existing PtrRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/ptr_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PtrRecord to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "dns_ptr_record", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "dns_ptr_record", importId: importFromId, provider });
       }
 
   // ===========
@@ -168,35 +168,35 @@ export class PtrRecord extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      ptr: cdktf.stringToTerraform(this._ptr),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      zone: cdktf.stringToTerraform(this._zone),
+      name: cdktn.stringToTerraform(this._name),
+      ptr: cdktn.stringToTerraform(this._ptr),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      zone: cdktn.stringToTerraform(this._zone),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ptr: {
-        value: cdktf.stringToHclTerraform(this._ptr),
+        value: cdktn.stringToHclTerraform(this._ptr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

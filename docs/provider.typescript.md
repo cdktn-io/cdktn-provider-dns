@@ -151,7 +151,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DnsProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a DnsProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -223,7 +223,7 @@ import { provider } from '@cdktn/provider-dns'
 provider.DnsProvider.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a DnsProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DnsProvider resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.scope"></a>
 
@@ -253,7 +253,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-dns.provider.DnsProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DnsProvider to import is found.
 
@@ -264,17 +264,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.metaAttributes">metaAttributes</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.alias">alias</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.aliasInput">aliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.updateInput">updateInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.update">update</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.updateInput">updateInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProvider.property.update">update</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | *No description.* |
 
 ---
 
@@ -296,7 +296,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -346,7 +346,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -386,7 +386,7 @@ public readonly aliasInput: string;
 public readonly updateInput: IResolvable | DnsProviderUpdate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
 
 ---
 
@@ -396,7 +396,7 @@ public readonly updateInput: IResolvable | DnsProviderUpdate[];
 public readonly update: IResolvable | DnsProviderUpdate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
 
 ---
 
@@ -435,7 +435,7 @@ const dnsProviderConfig: provider.DnsProviderConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderConfig.property.alias">alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktn/provider-dns.provider.DnsProviderConfig.property.update">update</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | update block. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderConfig.property.update">update</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]</code> | update block. |
 
 ---
 
@@ -459,7 +459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly update: IResolvable | DnsProviderUpdate[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdate">DnsProviderUpdate</a>[]
 
 update block.
 
@@ -481,12 +481,12 @@ const dnsProviderUpdate: provider.DnsProviderUpdate = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.gssapi">gssapi</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>[]</code> | gssapi block. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.gssapi">gssapi</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>[]</code> | gssapi block. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.keyAlgorithm">keyAlgorithm</a></code> | <code>string</code> | Required if `key_name` is set. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.keyName">keyName</a></code> | <code>string</code> | The name of the TSIG key used to sign the DNS update messages. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.keySecret">keySecret</a></code> | <code>string</code> | Required if `key_name` is set A Base64-encoded string containing the shared secret to be used for TSIG. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.port">port</a></code> | <code>number</code> | The target UDP port on the server where updates are sent to. |
-| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.recursive">recursive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the Recursion Desired (RD) flag on DNS queries. |
+| <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.recursive">recursive</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable the Recursion Desired (RD) flag on DNS queries. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.retries">retries</a></code> | <code>number</code> | How many times to retry on connection timeout. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.server">server</a></code> | <code>string</code> | The hostname or IP address of the DNS server to send updates to. |
 | <code><a href="#@cdktn/provider-dns.provider.DnsProviderUpdate.property.timeout">timeout</a></code> | <code>string</code> | Timeout for DNS queries. |
@@ -500,7 +500,7 @@ const dnsProviderUpdate: provider.DnsProviderUpdate = { ... }
 public readonly gssapi: IResolvable | DnsProviderUpdateGssapi[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-dns.provider.DnsProviderUpdateGssapi">DnsProviderUpdateGssapi</a>[]
 
 gssapi block.
 
@@ -578,7 +578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly recursive: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable the Recursion Desired (RD) flag on DNS queries.
 

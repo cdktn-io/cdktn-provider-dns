@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDnsARecordSetConfig extends cdktf.TerraformMetaArguments {
+export interface DataDnsARecordSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Host to look up.
   *
@@ -23,7 +23,7 @@ export interface DataDnsARecordSetConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/a_record_set dns_a_record_set}
 */
-export class DataDnsARecordSet extends cdktf.TerraformDataSource {
+export class DataDnsARecordSet extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -34,14 +34,14 @@ export class DataDnsARecordSet extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDnsARecordSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDnsARecordSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDnsARecordSet to import
   * @param importFromId The id of the existing DataDnsARecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/data-sources/a_record_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDnsARecordSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "dns_a_record_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "dns_a_record_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -107,14 +107,14 @@ export class DataDnsARecordSet extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      host: cdktf.stringToTerraform(this._host),
+      host: cdktn.stringToTerraform(this._host),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
