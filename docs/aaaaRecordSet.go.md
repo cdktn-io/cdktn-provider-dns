@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/aaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/aaaarecordset"
 
 aaaarecordset.NewAaaaRecordSet(scope Construct, id *string, config AaaaRecordSetConfig) AaaaRecordSet
 ```
@@ -421,7 +421,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/aaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/aaaarecordset"
 
 aaaarecordset.AaaaRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/aaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/aaaarecordset"
 
 aaaarecordset.AaaaRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ aaaarecordset.AaaaRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/aaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/aaaarecordset"
 
 aaaarecordset.AaaaRecordSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ aaaarecordset.AaaaRecordSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/aaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/aaaarecordset"
 
 aaaarecordset.AaaaRecordSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.aaaaRecordSet.AaaaRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/aaaarecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/aaaarecordset"
 
 &aaaarecordset.AaaaRecordSetConfig {
 	Connection: interface{},

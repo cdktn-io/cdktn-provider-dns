@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/datadnsmxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/datadnsmxrecordset"
 
 datadnsmxrecordset.NewDataDnsMxRecordSet(scope Construct, id *string, config DataDnsMxRecordSetConfig) DataDnsMxRecordSet
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/datadnsmxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/datadnsmxrecordset"
 
 datadnsmxrecordset.DataDnsMxRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/datadnsmxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/datadnsmxrecordset"
 
 datadnsmxrecordset.DataDnsMxRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadnsmxrecordset.DataDnsMxRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/datadnsmxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/datadnsmxrecordset"
 
 datadnsmxrecordset.DataDnsMxRecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadnsmxrecordset.DataDnsMxRecordSet_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/datadnsmxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/datadnsmxrecordset"
 
 datadnsmxrecordset.DataDnsMxRecordSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/datadnsmxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/datadnsmxrecordset"
 
 &datadnsmxrecordset.DataDnsMxRecordSetConfig {
 	Connection: interface{},
@@ -727,7 +727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSetMx.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/datadnsmxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/datadnsmxrecordset"
 
 &datadnsmxrecordset.DataDnsMxRecordSetMx {
 
@@ -742,7 +742,7 @@ import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/datadnsmxrecordset"
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSetMxList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/datadnsmxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/datadnsmxrecordset"
 
 datadnsmxrecordset.NewDataDnsMxRecordSetMxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDnsMxRecordSetMxList
 ```
@@ -891,7 +891,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.dataDnsMxRecordSet.DataDnsMxRecordSetMxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/datadnsmxrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/datadnsmxrecordset"
 
 datadnsmxrecordset.NewDataDnsMxRecordSetMxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDnsMxRecordSetMxOutputReference
 ```
