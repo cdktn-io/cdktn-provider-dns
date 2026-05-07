@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/srvrecordset"
 
 srvrecordset.NewSrvRecordSet(scope Construct, id *string, config SrvRecordSetConfig) SrvRecordSet
 ```
@@ -427,7 +427,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/srvrecordset"
 
 srvrecordset.SrvRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/srvrecordset"
 
 srvrecordset.SrvRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ srvrecordset.SrvRecordSet_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/srvrecordset"
 
 srvrecordset.SrvRecordSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ srvrecordset.SrvRecordSet_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/srvrecordset"
 
 srvrecordset.SrvRecordSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/srvrecordset"
 
 &srvrecordset.SrvRecordSetConfig {
 	Connection: interface{},
@@ -983,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSetSrv.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/srvrecordset"
 
 &srvrecordset.SrvRecordSetSrv {
 	Port: *f64,
@@ -1067,7 +1067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSetSrvList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/srvrecordset"
 
 srvrecordset.NewSrvRecordSetSrvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SrvRecordSetSrvList
 ```
@@ -1227,7 +1227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.srvRecordSet.SrvRecordSetSrvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v11/srvrecordset"
+import "github.com/cdktn-io/cdktn-provider-dns-go/dns/v12/srvrecordset"
 
 srvrecordset.NewSrvRecordSetSrvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SrvRecordSetSrvOutputReference
 ```
