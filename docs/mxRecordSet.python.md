@@ -4,7 +4,7 @@
 
 ### MxRecordSet <a name="MxRecordSet" id="@cdktn/provider-dns.mxRecordSet.MxRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set dns_mx_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set dns_mx_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.mxRecordSet.MxRecordSet.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#zone MxRecordSet#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set#zone MxRecordSet#zone}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 mx block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#mx MxRecordSet#mx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set#mx MxRecordSet#mx}
 
 ---
 
@@ -134,7 +134,7 @@ The name of the record set.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#name MxRecordSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set#name MxRecordSet#name}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
 
 ---
 
@@ -677,7 +677,7 @@ The construct id used in the generated config for the MxRecordSet to import.
 
 The id of the existing MxRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1091,7 +1091,7 @@ zone: str
 
 DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#zone MxRecordSet#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set#zone MxRecordSet#zone}
 
 ---
 
@@ -1105,7 +1105,7 @@ mx: IResolvable | typing.List[MxRecordSetMx]
 
 mx block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#mx MxRecordSet#mx}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set#mx MxRecordSet#mx}
 
 ---
 
@@ -1121,7 +1121,7 @@ The name of the record set.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#name MxRecordSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set#name MxRecordSet#name}
 
 ---
 
@@ -1135,7 +1135,7 @@ ttl: typing.Union[int, float]
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set#ttl MxRecordSet#ttl}
 
 ---
 
@@ -1171,7 +1171,7 @@ exchange: str
 
 The FQDN of the mail exchange, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#exchange MxRecordSet#exchange}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set#exchange MxRecordSet#exchange}
 
 ---
 
@@ -1185,7 +1185,7 @@ preference: typing.Union[int, float]
 
 The preference for the record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.5.0/docs/resources/mx_record_set#preference MxRecordSet#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/mx_record_set#preference MxRecordSet#preference}
 
 ---
 
