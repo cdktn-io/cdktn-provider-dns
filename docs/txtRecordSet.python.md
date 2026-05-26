@@ -4,7 +4,7 @@
 
 ### TxtRecordSet <a name="TxtRecordSet" id="@cdktn/provider-dns.txtRecordSet.TxtRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/txt_record_set dns_txt_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.1/docs/resources/txt_record_set dns_txt_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-dns.txtRecordSet.TxtRecordSet.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The text records this record set will be set to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/txt_record_set#txt TxtRecordSet#txt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.1/docs/resources/txt_record_set#txt TxtRecordSet#txt}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/txt_record_set#zone TxtRecordSet#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.1/docs/resources/txt_record_set#zone TxtRecordSet#zone}
 
 ---
 
@@ -134,7 +134,7 @@ The name of the record set.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/txt_record_set#name TxtRecordSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.1/docs/resources/txt_record_set#name TxtRecordSet#name}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/txt_record_set#ttl TxtRecordSet#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.1/docs/resources/txt_record_set#ttl TxtRecordSet#ttl}
 
 ---
 
@@ -655,7 +655,7 @@ The construct id used in the generated config for the TxtRecordSet to import.
 
 The id of the existing TxtRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/txt_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.1/docs/resources/txt_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1069,7 +1069,7 @@ txt: typing.List[str]
 
 The text records this record set will be set to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/txt_record_set#txt TxtRecordSet#txt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.1/docs/resources/txt_record_set#txt TxtRecordSet#txt}
 
 ---
 
@@ -1083,7 +1083,7 @@ zone: str
 
 DNS zone the record set belongs to. It must be an FQDN, that is, include the trailing dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/txt_record_set#zone TxtRecordSet#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.1/docs/resources/txt_record_set#zone TxtRecordSet#zone}
 
 ---
 
@@ -1099,7 +1099,7 @@ The name of the record set.
 
 The `zone` argument will be appended to this value to create the full record path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/txt_record_set#name TxtRecordSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.1/docs/resources/txt_record_set#name TxtRecordSet#name}
 
 ---
 
@@ -1113,7 +1113,7 @@ ttl: typing.Union[int, float]
 
 The TTL of the record set. Defaults to `3600`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.0/docs/resources/txt_record_set#ttl TxtRecordSet#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/dns/3.6.1/docs/resources/txt_record_set#ttl TxtRecordSet#ttl}
 
 ---
 
