@@ -55,7 +55,7 @@ export interface DnsProviderUpdateGssapi {
 export function dnsProviderUpdateGssapiToTerraform(struct?: DnsProviderUpdateGssapi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     keytab: cdktn.stringToTerraform(struct!.keytab),
@@ -69,7 +69,7 @@ export function dnsProviderUpdateGssapiToTerraform(struct?: DnsProviderUpdateGss
 export function dnsProviderUpdateGssapiToHclTerraform(struct?: DnsProviderUpdateGssapi | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     keytab: {
@@ -169,7 +169,7 @@ export interface DnsProviderUpdate {
 export function dnsProviderUpdateToTerraform(struct?: DnsProviderUpdate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key_algorithm: cdktn.stringToTerraform(struct!.keyAlgorithm),
@@ -189,7 +189,7 @@ export function dnsProviderUpdateToTerraform(struct?: DnsProviderUpdate | cdktn.
 export function dnsProviderUpdateToHclTerraform(struct?: DnsProviderUpdate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key_algorithm: {
